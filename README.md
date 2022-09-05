@@ -137,7 +137,7 @@ plt.ylim([-1,1])
 plt.xlim([0,128])
 ```
 
-![Alt text](DFT_bands.jpg)
+![Alt text](overlay.jpg)
 
 
 To recap, at this point we have succeeded in taking a complex electronic structure model that was computed on a supercomputer using sophisticated theoretical techniques, and reducing it to an 11 x 11 matrix eigenvalue problem that can be solved in about 1.5 seconds on your average laptop.  Not too shabby!  Of course, the real usefulness in doing something like this is to be able to then go in and analyze the hoppings in order to gain physical insight into the electronic structure.  Thankfully, this information is now stored in the learned model parameters.  One convenient way to organize this information for further analysis is to load it into a tight binding model using the [pythtb](http://www.physics.rutgers.edu/pythtb/) package.
