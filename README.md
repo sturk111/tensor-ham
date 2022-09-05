@@ -68,7 +68,7 @@ class GenHam(Layer):
 	
 	def call(self, k):
 		k = tf.transpose(k)
-		R = tf.stack([R for _ in range(self.cells.shape[0])],axis=2) + self.cells
+		R = tf.stack([self.Rijvar for _ in range(self.cells.shape[0])],axis=2) + self.cells
 		
 		#hoppings must be symmetric
 		A0 = self.amp[:,:,0] + tf.transpose(self.amp[:,:,0])
