@@ -10,7 +10,7 @@ Enter deep learning.  It turns out that there are a number of machine learning t
 
 # An Example
 
-We start with a precomputed band structure for a particular material:
+Here we walk through the code contained in tensorHam.py.  We start with a precomputed band structure for a particular material:
 
 ```python
 import pickle
