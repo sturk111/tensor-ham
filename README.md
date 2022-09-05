@@ -126,6 +126,7 @@ model.fit(k_vec,evals.T,epochs=50,batch_size=1)
 The fit is completed in under a minute on a seven year old MacBook pro with on the order of 100 browser tabs open (!).  Here is the result:
 
 ```python
+evals_model = np.zeros(evals.shape)
 for i in range(len(k_vec)):
 	e = tf.math.real(model(np.array([[k_vec[i,0],k_vec[i,1]]]))).numpy()
 	evals_model[:,i] = e
