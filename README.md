@@ -90,7 +90,7 @@ class GenHam(Layer):
 
 This layer takes as input to its constructor information about the geometric structure of the lattice contained in the arrays Rij and cells.  It then randomly initializes learnable hopping amplitudes in the tensor amps.  The call method takes a single argument, k, representing a vector in momentum space, formulates the Hamiltonian using information about the geometric structure, and outputs the eigenvalue spectrum for that given momentum.  
 
-Note that for a physically realistic model, we would have to do a bit more work to restrict hoppings to nearest or next nearest neighbors and enforce the symmetries of the relevant atomic orbitals.  While this is perfectly doable within the present framework, it would introduce considerable complexity in the code.  A sketch of what that might look like is given in the file tensorHam_physical.py.  For this demonstration, however, we stick to the basics.
+Note that for a physically realistic model, we would have to do a bit more work to restrict hoppings to nearest or next nearest neighbors and enforce the symmetries of the relevant atomic orbitals.  While this is perfectly doable within the present framework, it would introduce considerable complexity in the code.  For this demonstration, we stick to the basics.
 
 Now we need a custom loss function to compare the eigenvalue spectrum produced by our model to the true eigenvalue spectrum obtained from first principles calculations.
 
