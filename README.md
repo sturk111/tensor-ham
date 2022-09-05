@@ -117,7 +117,7 @@ There are a few things going on here.  First, we have introduced a mask whose pu
 We are finally ready to train this model. 
 
 ```python
-model = tf.keras.Sequential([GenHam_orbs(Rij, cells)]) 
+model = tf.keras.Sequential([GenHam(Rij, cells)]) 
 opt = tf.keras.optimizers.SGD(learning_rate=5e-3)
 model.compile(optimizer=opt, loss=LeastSquares())
 
