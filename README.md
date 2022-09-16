@@ -1,4 +1,4 @@
-# Learning Solid State Hamiltonians with Tensorflow
+# Learning Solid State Hamiltonians with TensorFlow
 
 A solid, just like any physical system, is governed by a [Hamiltonian](https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics)).  A Hamiltonian is a matrix describing the allowed states of a system and their corresponding energies.  In particular, we can write down a Hamiltonian that describes an electron inside of a solid so that the eigenvalues of this Hamiltonian matrix represent the allowed energies for that electron.  By solving for the eigenvalue spectrum as a function of momentum, we can construct the material's [band structure](https://en.wikipedia.org/wiki/Electronic_band_structure), from which all other material properties can in principle be derived.  
 
